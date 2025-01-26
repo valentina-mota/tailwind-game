@@ -1,0 +1,88 @@
+ body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin: 20px;
+ }
+
+ .question {
+    margin: 20px 0;
+    font-size: clamp(16px, 5vw, 24px);
+
+ }
+
+ .feedback {
+     font-size: 18px;
+     margin: 20px 0 0;
+ }
+
+ .correct {
+     color: green;
+ }
+
+ .incorrect {
+     color: red;
+     border-color: red;
+ }
+
+ .hidden {
+     display: none;
+ }
+
+ .score {
+     display: flex;
+     justify-content: center;
+     margin: 20px 0;
+ }
+
+ .score span {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     margin: 0 5px;
+     border: 2px solid teal;
+     border-radius: 50%;
+ }
+
+ .score .correct {
+     background-color: green;
+     border-color: green;
+ }
+
+ .score .incorrect {
+     background-color: red;
+     border-color: red;
+ }
+
+ .answer-and-submit-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+ }
+
+ .game {
+    /* border: 1px solid gray; */
+    padding: 6rem;
+    padding: clamp(2rem, 6vw, 6rem);
+    box-shadow: 5px 5px 7px 5px rgba(0, 128, 128, 0.4);
+    border-radius: 4px;
+    margin-bottom: .5rem;
+ }
+
+#answer {
+    display: block;
+    font-size: clamp(14px, 2vw, 20px);
+    padding: .2em;
+}
+
+#submit {
+    font-size: clamp(12px, 2vw, 18px);
+    padding: .2em;
+    cursor: pointer;
+}
+
+@media (max-width: 340px) {
+    .game {
+        padding: 0;
+    }
+}
